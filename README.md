@@ -30,4 +30,8 @@ To provide a application to perform multiple function on a set data include lect
 
 ## Databse design
 
+**Diagram**
+
+![This a drap diagram NOT the result](./Illustration/ERD_DBS.drawio.png)
+
 ## Result show
