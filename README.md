@@ -15,6 +15,17 @@ This project Making a program Manage lecturer's information
 
 ## Introduction
 
+**About team**
+
+|Name|Student ID|
+|-|-|
+|Ngo Tuan Khai|MAMAIU21016|
+|Cai Kim Dat|MAMAIU21040|
+|Le Duc Phat|MAMAIU21049|
+
+**About the problem**
+To provide a application to perform multiple function on a set data include lecturers, courses, lecturers teach, lecturers do projects
+
 ## ERD
 
 ## Databse design
