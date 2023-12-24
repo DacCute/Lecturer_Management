@@ -30,10 +30,25 @@ To provide a application to perform multiple function on a set data include lect
 
 **Entities include in database**
 
-- <u>Lecturers information:</u>: identifiers, name, gender, department, date of birth, GPA, total credit, etc
-- <u>Course information:</u> identifiers, title, credit, department, semester, etc
-- <u>Deparmentinformation:</u> Identifiers, Name, Building, Room, etc
-- <u>Project information:</u> indentifiers, name, duration, budget, etc
+<!--> Lecturer entities <-->
+|<u>Lecturers information</u>||
+|-|-|
+||||
+
+<!--> Course entities <-->
+|<u>Course information:</u>||
+|-|-|
+|||
+
+<!--> Department entities <-->
+|<u>Deparmentinformation</u>||
+|-|-|
+|||
+
+<!--> Project entities <-->
+|<u>Project information</u>||
+|-|-|
+|||
 
 **Diagram**
 
