@@ -1,4 +1,5 @@
 # Lecturer Management
+<!-- Add a IU pic there -->
 
 <!-- Preface -->
 This project Making a program Manage lecturer's information
@@ -14,6 +15,8 @@ This project Making a program Manage lecturer's information
   - [Result show](#result-show)
 
 ## Introduction
+
+> Project UI power by w3.css
 
 **About team**
 
@@ -59,3 +62,4 @@ To provide a application to perform multiple function on a set data include lect
 ![This a drap diagram NOT the result](./Illustration/ERD_DBS.drawio.png)
 
 ## Result show
+
