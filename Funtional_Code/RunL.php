@@ -5,7 +5,11 @@ if (mysqli_connect_errno()){
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-    # connect to sever
+# Select database
+$db_selected = mysqli_select_db($con, "lmdb");
+if (!$db_selected) {
+    echo "Failed to select DB. <br/>";
+}
 
 # take task
 
