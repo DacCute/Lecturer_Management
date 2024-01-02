@@ -1,7 +1,15 @@
 <?php
-    # take task
+# connect SQL
+$con = mysqli_connect("localhost","datck","datck");
+if (mysqli_connect_errno()){
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
     # connect to sever
 
-    # use database
+# take task
+
+# connect to sever
+
+# use database
 ?>
