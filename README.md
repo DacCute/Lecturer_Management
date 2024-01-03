@@ -34,22 +34,22 @@ To provide a application to perform multiple function on a set data include lect
 **Entities include in database**
 
 <!--> Lecturer entities <-->
-|<u>Lecturers information</u>||
+|<u>Lecturers information</u>|lecinfo|
 |-|-|
 ||||
 
 <!--> Course entities <-->
-|<u>Course information:</u>||
+|<u>Course information:</u>|couinfo|
 |-|-|
 |||
 
 <!--> Department entities <-->
-|<u>Deparmentinformation</u>||
+|<u>Deparmentinformation</u>|depinfo|
 |-|-|
 |||
 
 <!--> Project entities <-->
-|<u>Project information</u>||
+|<u>Project information</u>|proinfo|
 |-|-|
 |||
 
