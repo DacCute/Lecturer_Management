@@ -13,9 +13,9 @@
             <a href="#home" class="w3-bar-item w3-button"><b>LM</b> Lecturer Management</a>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
-                <a href="./RunD.html" class="w3-bar-item w3-button">Department</a>
-                <a href="./RunC.html" class="w3-bar-item w3-button">Course</a>
-                <a href="./RunP.html" class="w3-bar-item w3-button">Project</a>
+                <a href="RunD.html" class="w3-bar-item w3-button">Department</a>
+                <a href="RunC.html" class="w3-bar-item w3-button">Course</a>
+                <a href="RunP.html" class="w3-bar-item w3-button">Project</a>
             </div>
             </div>
         </div>
@@ -25,9 +25,9 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Lecturer information</h3>
             <p>Searching for lecturer information</p>
-            <form action="/RunL.php" target="_self" method="post">
+            <form action="RunL.php" target="_self" method="post">
             <input class="w3-input w3-border" type="text" placeholder="Name or id" required name="lnameid">
-            <button class="w3-button w3-black w3-section" type="submit">
+            <button class="w3-button w3-black w3-section" type="submit" name="submit">
                 <i class="fa fa-paper-plane"></i> Search
             </button>
             </form>
