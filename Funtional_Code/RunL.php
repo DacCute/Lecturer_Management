@@ -1,4 +1,8 @@
 <?php
+# take task
+$lnameid = $_POST["lnameid"];
+echo $lnameid;
+
 # connect SQL
 $con = mysqli_connect("localhost","datck","datck");
 if (mysqli_connect_errno()){
@@ -11,7 +15,18 @@ if (!$db_selected) {
     echo "Failed to select DB. <br/>";
 }
 
-# take task
+# use database
+try{
+    $sql = "SELECT * FROM lecinfo WHERE lecid = '$lnameid'";
+    $result = mysqli_query($con,$sql);
+    echo "Printout exactualy data";
+}
+catch (Exception $e){
+    $sql = 
+        "SELECT * FROM lecinfo WHERE concate = '%$lname%'";
+    $result = mysqli_query($con,$sql); 
+    echo "Printout a set of lecturers has the name",$lnameid;
+}
 
 # connect to sever
 
