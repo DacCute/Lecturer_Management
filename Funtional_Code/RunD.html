@@ -8,6 +8,30 @@
 
     <!-- Body -->
     <body>
+        <!-- Navbar (sit on top) -->
+        <div class="web-top">
+            <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="Main.html" class="w3-bar-item w3-button"><b>LM</b> Lecturer Management</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#home" class="w3-bar-item w3-button">Department</a>
+                <a href="RunC.html" class="w3-bar-item w3-button">Course</a>
+                <a href="RunP.html" class="w3-bar-item w3-button">Project</a>
+            </div>
+            </div>
+        </div>
 
+
+        <!-- Input Department data -->
+        <div class="w3-container w3-padding-30" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department information</h3>
+            <p>Searching for Department information</p>
+            <form action="RunD.php" target="_self" method="post">
+            <input class="w3-input w3-border" type="text" placeholder="Name of Department" required name="lnameid">
+            <button class="w3-button w3-black w3-section" type="submit" name="submit">
+                <i class="fa fa-paper-plane"></i> Search
+            </button>
+            </form>
+        </div>
     </body>
 </html>
