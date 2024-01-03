@@ -28,7 +28,19 @@ catch (Exception $e){
     echo "Printout a set of lecturers has the name",$lnameid;
 }
 
-# connect to sever
+# Make table
+echo "<table border='1'>
+<tr>
+<th>ID</th>
+<th>Name</th>
+</tr>";
 
-# use database
+# Print data
+while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
+{
+    echo "<tr>";
+    echo "<td>" . $row["lecid"] . "</td>";
+    echo "<td>" . $row["con"] . "</td>";
+    echo "</tr>";
+}
 ?>
