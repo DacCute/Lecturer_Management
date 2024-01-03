@@ -41,7 +41,8 @@ To provide a application to perform multiple function on a set data include lect
 <!--> Course entities <-->
 |<u>Course information:</u>|couinfo|
 |-|-|
-|||
+|Course_id|VARCHAR(7)|
+|Course_name|VARCHAR(10)|
 
 <!--> Department entities <-->
 |<u>Deparmentinformation</u>|depinfo|
