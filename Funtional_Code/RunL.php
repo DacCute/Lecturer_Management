@@ -29,7 +29,7 @@ catch (Exception $e){
 }
 
 # Make table
-echo "<table border='1'>
+echo "<table border='1' cellpadding='0' cellspacing='0' class='db-table'>
 <tr>
 <th>ID</th>
 <th>Name</th>
