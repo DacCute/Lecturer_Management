@@ -2,7 +2,6 @@
     <!-- Head -->
     <head>
         <title>Lecturer Management</title>
-        <link rel="stylesheet" href="Define.css">
         <link rel="stylesheet" href="../Define.css">
     </head>
 
@@ -26,18 +25,12 @@
     <!-- Body -->
     <body>
         <!-- Navbar (sit on top) -->
-        <div class="web-top">
-            <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href="Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
         <div class="navbar">
             <div class="w3-bar w3-grey w3-wide w3-padding">
             <a href="../Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
                 <a href="#home" class="w3-bar-item w3-button">Lecturer</a>
-                <a href="RunD.html" class="w3-bar-item w3-button">Department</a>
-                <a href="RunC.html" class="w3-bar-item w3-button">Course</a>
-                <a href="RunP.html" class="w3-bar-item w3-button">Project</a>
                 <a href="../Department/RunD.html" class="w3-bar-item w3-button">Department</a>
                 <a href="../Course/RunC.html" class="w3-bar-item w3-button">Course</a>
                 <a href="../Project/RunP.html" class="w3-bar-item w3-button">Project</a>
@@ -49,21 +42,28 @@
         <!-- Input Lecturer data -->
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Lecturer information</h3>
-            <p>Searching for lecturer information</p>
-            <form action="RunL.php" target="display-frame" method="post">
-            <input class="w3-input w3-border" type="text" placeholder="Name or id" required name="lnameid">
+            <p>Add new lecturer information</p>
+            <form action="Add.php" target="display-frame" method="post">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer ID" required name="lid">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer Name" required name="lname">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Phone Number" required name="lphonenum">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Email" required name="lemail">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Dob" required name="ldob">
+            <select class="w3-input w3-border w3-section" name='lgender'>
+                <option value='female'>Female</option>
+                <option value='male'>Male</option>
+                </select>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="GPA" required name="gpa">
             <button class="w3-button w3-black w3-section" type="submit" name="submitid">
-                <i class="fa fa-paper-plane"></i> Search ID
-            </button>
-            <button class="w3-button w3-black w3-section" type="submit" name="submitname">
-                <i class="fa fa-paper-plane"></i> Search Name
+                <i class="fa fa-paper-plane"></i> Add lecturer
             </button>
             </form>
         </div>
         
-        <iframe name="display-frame"
-        style="width:auto"></iframe>
-
+        <div class="w3-container w3-padding-" id="contact">
+            <p>Find lecturer information</p>
+            <a href="./Search.html" class="w3-bar-item w3-button w3-black w3-section">Search</a>
+        </div>
         </div>
     </body>
 </html>
