@@ -6,10 +6,27 @@
         <link rel="stylesheet" href="../Define.css">
     </head>
 
+    <!-- style -->
+    <style>
+        body {margin:0;}
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .main {
+            padding: 16px;
+            margin-top: 30px;
+        }
+    </style>
+    
     <!-- Body -->
     <body>
         <!-- Navbar (sit on top) -->
-        <div class="web-top">
+        <div class="navbar">
             <div class="w3-bar w3-white w3-wide w3-padding w3-card">
             <a href="Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
             <!-- Float links to the right. Hide them on small screens -->
@@ -22,7 +39,7 @@
             </div>
         </div>
 
-
+        <div class="main">
         <!-- Input Department data -->
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Course information</h3>
@@ -33,6 +50,7 @@
                 <i class="fa fa-paper-plane"></i> Search
             </button>
             </form>
+        </div>
         </div>
     </body>
 </html>
