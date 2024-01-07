@@ -1,0 +1,67 @@
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <title>Lecturer Management</title>
+        <link rel="stylesheet" href="../Define.css">
+    </head>
+
+    <!-- style -->
+    <style>
+        body {margin:0;}
+        
+        .main {
+            padding: 16px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- Body -->
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-grey w3-wide w3-padding">
+            <a href="../Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="../Lecturer/Search.html" class="w3-bar-item w3-button">Lecturer</a>
+                <a href="../Department/Search.html" class="w3-bar-item w3-button">Department</a>
+                <a href="#home" class="w3-bar-item w3-button">Course</a>
+                <a href="../Project/Search.html" class="w3-bar-item w3-button">Project</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="main">
+        <!-- Input Lecturer data -->
+        <div class="w3-container w3-padding-30" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Lecturer information</h3>
+            <p>Add new lecturer information</p>
+            <form action="Add.php" target="display-frame" method="post">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course ID" required name="cid">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer ID" required name='lid'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course Name" required name='cna'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="credit" required name='cre'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course Description" required name='cde'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Prerequisites" required name='pre'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course Materials" required name='cma'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="class period starts" required name='cps'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="class period ends" required name='cpe'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course Time start" required name='cts'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course Time end" required name='cte'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Course Day" required name='cda'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Room" required name='roo'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Semester" required name='sem'>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="year" required name='yea'>
+            <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                <i class="fa fa-paper-plane"></i> Add Course
+            </button>
+            </form>
+        </div>
+        
+        <div class="w3-container w3-padding-" id="contact">
+            <p>Find Course information</p>
+            <a href="./Search.html" class="w3-bar-item w3-button w3-black w3-section">Search</a>
+        </div>
+        </div>
+    </body>
+</html>
