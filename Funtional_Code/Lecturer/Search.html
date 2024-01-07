@@ -20,36 +20,74 @@
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
             <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href="Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
+            <a href="../Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
-                <a href="./RunL.html" class="w3-bar-item w3-button">Lecturer</a>
-                <a href="../Department/RunD.html" class="w3-bar-item w3-button">Department</a>
-                <a href="../Course/RunC.html" class="w3-bar-item w3-button">Course</a>
-                <a href="../Project/RunP.html" class="w3-bar-item w3-button">Project</a>
+                <a href="#home" class="w3-bar-item w3-button">Lecturer</a>
+                <a href="../Department/Search.html" class="w3-bar-item w3-button">Department</a>
+                <a href="../Course/Search.html" class="w3-bar-item w3-button">Course</a>
+                <a href="../Project/Search.html" class="w3-bar-item w3-button">Project</a>
             </div>
             </div>
         </div>
 
         <div class="main">
-        <!-- Input Lecturer data -->
+        <!-- Search Lecturer data -->
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Lecturer information</h3>
             <p>Searching for lecturer information</p>
             <form action="Search.php" target="display-frame" method="post">
-            <input class="w3-input w3-border" type="text" placeholder="Name or id" required name="lnameid">
-            <button class="w3-button w3-black w3-section" type="submit" name="submitid">
-                <i class="fa fa-paper-plane"></i> Search ID
-            </button>
-            <button class="w3-button w3-black w3-section" type="submit" name="submitname">
-                <i class="fa fa-paper-plane"></i> Search Name
-            </button>
+                <select class="w3-input w3-border w3-section" name='lgender'>
+                    <option value='female'>Lecturer ID</option>
+                    <option value='male'>Lecturer First Name</option>
+                    <option value='male'>Lecturer Last Name</option>
+                    <option value='male'>Day of birth</option>
+                    </select>
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="gpa">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Search lecturer
+                </button>
+        </form>
+
+        <!-- frame 1 -->
+        <iframe name="display-frame"
+        style="width:100%"></iframe>
+
+        <!-- choose task -->
+        <div class="w3-container w3-padding-30 w3-section" id="contact">
+            <p><b>Extra information</b></p>
+            <a>
+            <form action="deptl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Department information
+                </button>
             </form>
-        </div>
+            <form action="courl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Course information
+                </button>
+            </form>
+            <form action="projl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Project information
+                </button>
+            </form>
+            </a>
         </div>
 
-        <iframe name="display-frame"
-        style="width:auto"></iframe>
+        <!-- frame 2 -->
+        <iframe name="display-frame-2"
+        style="width:100%"></iframe>
+
+        <!-- Input data -->
+        <div class="w3-container w3-padding-30 w3-section" id="contact">
+            <p><b>If cannot find or haven has information</b></p>
+            <a
+                href="Add.html">
+                <button class="w3-button w3-grey w3-section">Add Lecturer</button>
+            </a>
+        </div>
+        </div>
 
     </body>
 </html>
