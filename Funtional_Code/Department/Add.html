@@ -1,0 +1,78 @@
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <title>Lecturer Management</title>
+        <link rel="stylesheet" href="../Define.css">
+    </head>
+
+    <!-- style -->
+    <style>
+        body {margin:0;}
+        
+        .main {
+            padding: 16px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- Body -->
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-grey w3-wide w3-padding">
+            <a href="../Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="../Lecturer/Search.html" class="w3-bar-item w3-button">Lecturer</a>
+                <a href="#home" class="w3-bar-item w3-button">Department</a>
+                <a href="../Course/Search.html" class="w3-bar-item w3-button">Course</a>
+                <a href="../Project/Search.html" class="w3-bar-item w3-button">Project</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="main">
+        <!-- Input Lecturer data -->
+        <div class="w3-container w3-padding-30" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department information</h3>
+            <p>Add new Department information</p>
+            <form action="Add.php" target="display-frame" method="post">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer ID" required name="lid">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer First Name" required name="lname">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer Last Name" required name="lname">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Phone Number" required name="lphonenum">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Department" required name="dep">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Email" required name="lemail">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Dob" required name="ldob">
+            <select class="w3-input w3-border w3-section" name='lgender'>
+                <option value='female'>Female</option>
+                <option value='male'>Male</option>
+                <option value='male'>Other</option>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Year of experience" required name="lyoe">
+            </select><select class="w3-input w3-border w3-section" name='lare'>
+                <option value='lec'>Lecturer</option>
+                <option value='ap'>Assistant Professor</option>
+                <option value='pro'>Professor</option>
+                <option value='hea'>Chairperson/Department Head</option>
+            </select>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Total credit" required name="cre">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="GPA" required name="gpa">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Day of joining" required name="doj">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Home Number" required name="hn">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Street" required name="st">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="City" required name="Cit">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="State" required name="sta">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Country" required name="cou">
+            <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                <i class="fa fa-paper-plane"></i> Add Department
+            </button>
+            </form>
+        </div>
+        
+        <div class="w3-container w3-padding-" id="contact">
+            <p>Find Department information</p>
+            <a href="./Search.html" class="w3-bar-item w3-button w3-black w3-section">Search</a>
+        </div>
+        </div>
+    </body>
+</html>

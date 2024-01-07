@@ -37,13 +37,65 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department information</h3>
             <p>Searching for Department information</p>
-            <form action="RunD.php" target="_self" method="post">
-            <input class="w3-input w3-border" type="text" placeholder="Name of Department" required name="lnameid">
-            <button class="w3-button w3-black w3-section" type="submit" name="submit">
-                <i class="fa fa-paper-plane"></i> Search
+            <select class="w3-input w3-border w3-section" name='task'>
+                <option value='did'>Department ID</option>
+                <option value='dna'>Department Name</option>
+                <option value='dhe'>Department Head</option>
+                <option value='loc'>Location</option>
+                <option value='pn'>Phone Number</option>
+                <option value='esd'>Established Date</option>
+                <option value='nos'>Number of Students</option>
+                <option value='dbu'>Departmental Budget</option>
+                <option value='fac'>Facilities</option>
+                <option value='fam'>Faculty Members</option>
+                <option value='dne'>Department Newsletter</option>
+                </select>
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="gpa">
+            <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                <i class="fa fa-paper-plane"></i> Search Department
             </button>
             </form>
         </div>
+
+        <!-- frame 1 -->
+        <iframe name="display-frame"
+        style="width:100%"></iframe>
+        <hr>
+
+        <!-- choose task -->
+        <div class="w3-container w3-padding-30 w3-section" id="contact">
+            <p><b>Extra information</b></p>
+            <form action="deptl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Lecturer information
+                </button>
+            </form>
+            <form action="courl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Course information
+                </button>
+            </form>
+            <form action="projl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Project information
+                </button>
+            </form>
         </div>
+
+        <!-- frame 2 -->
+        <iframe name="display-frame-2"
+        style="width:100%"></iframe>
+        <hr>
+
+        <!-- Input data -->
+        <div class="w3-container w3-padding-30 w3-section" id="contact">
+            <p><b>If cannot find or haven has information</b></p>
+            <a
+                href="Add.html">
+                <button class="w3-button w3-grey w3-section">Add Department</button>
+            </a>
+        </div>
+
+    </div>
     </body>
 </html>
