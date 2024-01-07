@@ -38,7 +38,17 @@
             <p>Searching for Project information</p>
             <form action="Search.php" target="display-frame" method="post">
                 <select class="w3-input w3-border w3-section" name='task'>
-                    <option value='lid'>project ID</option>=
+                    <option value='pid'>project ID</option>
+                    <option value='pna'>project Name</option>
+                    <option value='pde'>Project Description</option>
+                    <option value='sda'>Start Date</option>
+                    <option value='eda'>End_Date</option>
+                    <option value='ple'>Project_Leader</option>
+                    <option value='pmn'>project_member_number</option>
+                    <option value='pst'>Project_Status</option>
+                    <option value='bud'>Budget</option>
+                    <option value='col'>Collaborators</option>
+                    <option value='fso'>Funding Source</option>
                     </select>
                 <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="name">
                 <button class="w3-button w3-black w3-section" type="submit" name="submitid">
@@ -65,9 +75,9 @@
                     <i class="fa fa-paper-plane"></i> Course information
                 </button>
             </form>
-            <form action="projl.php" target="display-frame-2" method="post">
+            <form action="lectl.php" target="display-frame-2" method="post">
                 <button class="w3-button w3-black" type="submit" name="submitid">
-                    <i class="fa fa-paper-plane"></i> Project information
+                    <i class="fa fa-paper-plane"></i> Lecturer information
                 </button>
             </form>
         </div>
@@ -86,6 +96,5 @@
             </a>
         </div>
     </div>
-
     </body>
 </html>
