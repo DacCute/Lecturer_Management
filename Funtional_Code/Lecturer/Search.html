@@ -38,12 +38,25 @@
             <p>Searching for lecturer information</p>
             <form action="Search.php" target="display-frame" method="post">
                 <select class="w3-input w3-border w3-section" name='task'>
-                    <option value='female'>Lecturer ID</option>
-                    <option value='male'>Lecturer First Name</option>
-                    <option value='male'>Lecturer Last Name</option>
-                    <option value='male'>Day of birth</option>
+                    <option value='lid'>Lecturer ID</option>
+                    <option value='lfn'>Lecturer First Name</option>
+                    <option value='lln'>Lecturer Last Name</option>
+                    <option value='dob'>Day of Birth</option>
+                    <option value='did'>Department ID</option>
+                    <option value='ema'>Email</option>
+                    <option value='pnu'>Phone number</option>
+                    <option value='gen'>Gender</option>
+                    <option value='yoe'>years of experience</option>
+                    <option value='ara'>Academic Rank</option>
+                    <option value='tcr'>total credit</option>
+                    <option value='doj'>Date of Joining</option>
+                    <option value='hnu'>house number</option>
+                    <option value='str'>street</option>
+                    <option value='cit'>City</option>
+                    <option value='sta'>State</option>
+                    <option value='cou'>Country</option>
                     </select>
-                <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="gpa">
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="name">
                 <button class="w3-button w3-black w3-section" type="submit" name="submitid">
                     <i class="fa fa-paper-plane"></i> Search lecturer
                 </button>
