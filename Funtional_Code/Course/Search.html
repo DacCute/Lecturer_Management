@@ -34,8 +34,8 @@
         <div class="main">
         <!-- Search Lecturer data -->
         <div class="w3-container w3-padding-30" id="contact">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Lecturer information</h3>
-            <p>Searching for lecturer information</p>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Course information</h3>
+            <p>Searching for course information</p>
             <form action="Search.php" target="display-frame" method="post">
                 <select class="w3-input w3-border w3-section" name='task'>
                     <option value='cid'>Course ID</option>
@@ -66,6 +66,35 @@
         style="width:100%"></iframe>
         <hr>
 
+        <!-- update Lecturer data -->
+        <div class="w3-container w3-padding-30" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Course update</h3>
+            <p>Update Course information by id</p>
+            <form action="Search.php" target="display-frame" method="post">
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Course id" required name="nameid">
+                <select class="w3-input w3-border w3-section" name='task'>
+                    <option value='lid'>Lecturer ID</option>
+                    <option value='cna'>Course Name</option>
+                    <option value='cre'>credit</option>
+                    <option value='cde'>Course Description</option>
+                    <option value='pre'>Prerequisites</option>
+                    <option value='cma'>Course Materials</option>
+                    <option value='cps'>class period starts</option>
+                    <option value='cpe'>class period ends</option>
+                    <option value='cts'>Course Time start</option>
+                    <option value='cte'>Course Time end</option>
+                    <option value='cda'>Course Day</option>
+                    <option value='roo'>Room</option>
+                    <option value='sem'>Semester</option>
+                    <option value='yea'>year</option>
+                    </select>
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Replace" required name="namerp">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Search lecturer
+                </button>
+            </form>
+        </div>
+
         <!-- choose task -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
             <p><b>Extra information</b></p>
@@ -93,7 +122,7 @@
 
         <!-- Input data -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
-            <p><b>If cannot find or haven has information</b></p>
+            <p><b>If cannot find or haven't has information</b></p>
             <a
                 href="Add.html">
                 <button class="w3-button w3-grey w3-section">Add Course</button>

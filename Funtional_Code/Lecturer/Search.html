@@ -68,6 +68,37 @@
         style="width:100%"></iframe>
         <hr>
 
+        <!-- update Lecturer data -->
+        <div class="w3-container w3-padding-30" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Lecturer Update</h3>
+            <p>Update lecturer information by id</p>
+            <form action="Search.php" target="display-frame" method="post">
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Lecturer id" required name="nameid">
+                <select class="w3-input w3-border w3-section" name='task'>
+                    <option value='lfn'>Lecturer First Name</option>
+                    <option value='lln'>Lecturer Last Name</option>
+                    <option value='dob'>Day of Birth</option>
+                    <option value='did'>Department ID</option>
+                    <option value='ema'>Email</option>
+                    <option value='pnu'>Phone number</option>
+                    <option value='gen'>Gender</option>
+                    <option value='yoe'>years of experience</option>
+                    <option value='ara'>Academic Rank</option>
+                    <option value='tcr'>total credit</option>
+                    <option value='doj'>Date of Joining</option>
+                    <option value='hnu'>house number</option>
+                    <option value='str'>street</option>
+                    <option value='cit'>City</option>
+                    <option value='sta'>State</option>
+                    <option value='cou'>Country</option>
+                    </select>
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Replace" required name="namerp">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Search lecturer
+                </button>
+            </form>
+        </div>
+
         <!-- choose task -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
             <p><b>Extra information</b></p>
@@ -95,7 +126,7 @@
 
         <!-- Input data -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
-            <p><b>If cannot find or haven has information</b></p>
+            <p><b>If cannot find or haven't has information</b></p>
             <a
                 href="Add.html">
                 <button class="w3-button w3-grey w3-section">Add Lecturer</button>
