@@ -2,10 +2,10 @@
 <html>
     <!-- Head -->
     <head>
-        <title>Project information</title>
+        <title>Course information</title>
         <link rel="stylesheet" href="../Define.css">
     </head>
-
+    
     <!-- style -->
     <style>
         body {margin:0;}
@@ -24,21 +24,21 @@
             <a href="../Main.html" class="w3-bar-item w3-button"><b>LMS</b> Lecturer Management</a>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
-                <a href="../Lecturer/RunL.html" class="w3-bar-item w3-button">Lecturer</a>
-                <a href="../Department/RunD.html" class="w3-bar-item w3-button">Department</a>
-                <a href="../Course/RunC.html" class="w3-bar-item w3-button">Course</a>
-                <a href="#home" class="w3-bar-item w3-button">Project</a>
+                <a href="../Lecturer/Search.html" class="w3-bar-item w3-button">Lecturer</a>
+                <a href="../Department/Search.html" class="w3-bar-item w3-button">Department</a>
+                <a href="#home" class="w3-bar-item w3-button">Course</a>
+                <a href="../Project/Search.html" class="w3-bar-item w3-button">Project</a>
             </div>
             </div>
         </div>
 
         <div class="main">
-        <!-- Input Project data -->
+        <!-- Input Department data -->
         <div class="w3-container w3-padding-30" id="contact">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project information</h3>
-            <p>Searching for Project information</p>
-            <form action="RunP.php" target="_self" method="post">
-            <input class="w3-input w3-border" type="text" placeholder="Name of Project" required name="lnameid">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Course information</h3>
+            <p>Searching for Course information</p>
+            <form action="RunC.php" target="_self" method="post">
+            <input class="w3-input w3-border" type="text" placeholder="Name of Course" required name="lnameid">
             <button class="w3-button w3-black w3-section" type="submit" name="submit">
                 <i class="fa fa-paper-plane"></i> Search
             </button>
