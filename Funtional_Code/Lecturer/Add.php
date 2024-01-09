@@ -2,11 +2,22 @@
 # input
 $lid = $_POST["lid"];
 $lname = $_POST["lname"];
+$fname = $_POST["fname"];
 $lphonenum = $_POST["lphonenum"];
+$sta = $_POST["sta"];
+$st = $_POST["st"];
+$doj = $_POST["doj"];
 $lemail = $_POST["lemail"];
 $ldob = $_POST["ldob"];
 $lgender = $_POST["lgender"];
-$lgpa = $_POST["lgpa"];
+$lyoe = $_POST["lyoe"];
+$lare = $_POST["lare"];
+$dep = $_POST["dep"];
+$cou = $_POST["cou"];
+$cit = $_POST["cit"];
+$hn = $_POST["hn"];
+$gpa = $_POST["gpa"];
+$cre = $_POST["cre"];
 
 # connect SQL
 $con = mysqli_connect("localhost","datck","datck");
@@ -22,8 +33,27 @@ if (!$db_selected) {
 
 # use database
 $sql = 
-        "INSERT INTO lecinfo
-        VALUES ('$fid','$fname','$fphonenum','$femail','$fdob','$lgender','$lgqp')";
+        "INSERT INTO lecturer
+        VALUES (
+            '$lid',
+            '$fname',
+            '$lname',
+            '$lphonenum',
+            '$lemail',
+            '$ldob',
+            '$lgender',
+            '$lyoe',
+            '$lare',
+            '$cre',
+            '$gpa',
+            '$doj',
+            '$hn',
+            '$st',
+            '$cit',
+            '$sta',
+            '$cou',
+            '$dep',
+            '1')";
     $result = mysqli_query($con,$sql); 
     echo "Insert new data!";
 

@@ -35,7 +35,7 @@ CREATE TABLE course(
     Course_Time_end TIME, 
     Course_Day VARCHAR(9), 
     Room VARCHAR(6), 
-    Semester ENUM('Spring', 'Summer', 'Fall', 'Winter'), 
+    Semester ENUM('spring', 'summer', 'fall', 'winter'), 
     year YEAR, 
     lecturer_id VARCHAR(10));
 
@@ -67,3 +67,11 @@ CREATE TABLE project(
     Budget INT(10), 
     Collaborators VARCHAR(30), 
     Funding_Source VARCHAR(20));
+
+# Divide      
+CREATE TABLE divide(
+    project_id VARCHAR(10),
+    lecturer_id VARCHAR(10),
+    FOREIGN KEY (lecturer_id) REFERENCES lecturer(lecturer_id),
+    FOREIGN KEY (project_id) REFERENCES project(project_id)
+);

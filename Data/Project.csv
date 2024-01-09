@@ -1,4 +1,4 @@
-"project _id","Project_Name","Project_Description","Start_Date","End_Date","Project_Leader","project_leader_number","project_leader_mail","Project_Status","Budget","Collaborators","Funding_Source"
+"project_id","Project_Name","Project_Description","Start_Date","End_Date","Project_Leader","project_leader_number","project_leader_mail","Project_Status","Budget","Collaborators","Funding_Source"
 "PJ_IT_001","CyberGuard Initiative","Develop an advanced cybersecurity solution for network protection.","2022-11-06","2024-31-12","Erik Hueber ","686-128-5360","ErikHueber@armyspy.com","finish","30000","Mark C. Smith","vnlife"
 "PJ_MA_002","MathQuest Learning Platform","Create an interactive online platform for mathematics education and practice.","2022-11-06","2024-31-12","Andrea Lindsey ","215-404-2482","AndreaPLindsey@armyspy.com","updating","40000","Luz J. Dodson","manulife"
 "PJ_LAN_003","Literary Legacy Archive","Digitize and catalog classic literature for a comprehensive online archive.","2022-11-06","2024-31-12","James Ross ","613-933-8198","JamesBRoss@armyspy.com","updating","35000","Eric F. Hughes","vietcombank"

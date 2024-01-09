@@ -16,9 +16,8 @@ if (!$db_selected) {
 }
 
 # use database
-$sql = "SELECT * FROM lecinfo WHERE lecturer_id = '$lname'";
+$sql = "SELECT * FROM lecturer WHERE lecturer_id = '$lname'";
 $result = mysqli_query($con,$sql);
-echo "Printout exactualy data";
 
 # Make table
 echo "<table border='1' cellpadding='0' cellspacing='0' class='db-table'>
@@ -26,12 +25,12 @@ echo "<table border='1' cellpadding='0' cellspacing='0' class='db-table'>
 <th>ID</th>
 <th>First Name</th>
 <th>Last Name</th>
-<th>Department ID</th>
 <th>Phone number</th>
-<th>email</th>
+<th>Email</th>
 <th>Day of birth</th>
 <th>Gender</th>
 <th>Year of experience</th>
+<th>Academic Rank</th>
 <th>Total credit</th>
 <th>GPA</th>
 <th>Date of joining</th>
@@ -40,21 +39,33 @@ echo "<table border='1' cellpadding='0' cellspacing='0' class='db-table'>
 <th>City</th>
 <th>State</th>
 <th>Country</th>
+<th>Department ID</th>
+<th>Active</th>
 </tr>";
 
 # Print data
 while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
 {
     echo "<tr>";
-    echo "<td>" . $row["lecid"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
-    echo "<td>" . $row["con"] . "</td>";
+    echo "<td>" . $row["lecturer_id"] . "</td>";
+    echo "<td>" . $row["first_name"] . "</td>";
+    echo "<td>" . $row["last_name"] . "</td>";
+    echo "<td>" . $row["phone_number"] . "</td>";
+    echo "<td>" . $row["lecturer_email"] . "</td>";
+    echo "<td>" . $row["date_of_birth"] . "</td>";
+    echo "<td>" . $row["gender"] . "</td>";
+    echo "<td>" . $row["years_of_experience"] . "</td>";
+    echo "<td>" . $row["Academic_Rank"] . "</td>";
+    echo "<td>" . $row["total_credit"] . "</td>";
+    echo "<td>" . $row["gpa"] . "</td>";
+    echo "<td>" . $row["Date_of_Joining"] . "</td>";
+    echo "<td>" . $row["house_number"] . "</td>";
+    echo "<td>" . $row["street"] . "</td>";
+    echo "<td>" . $row["city"] . "</td>";
+    echo "<td>" . $row["state"] . "</td>";
+    echo "<td>" . $row["country"] . "</td>";
+    echo "<td>" . $row["department_id"] . "</td>";
+    echo "<td>" . $row["active"] . "</td>";
     echo "</tr>";
 }
 ?>
