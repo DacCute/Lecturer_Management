@@ -16,7 +16,7 @@ if (!$db_selected) {
 }
 
 # use database
-$sql = "SELECT * FROM course
+$sql = "SELECT * FROM department
 WHERE $task LIKE '%$name%'
 ";
 

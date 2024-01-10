@@ -38,17 +38,17 @@
             <p>Searching for Project information</p>
             <form action="Search.php" target="display-frame" method="post">
                 <select class="w3-input w3-border w3-section" name='task'>
-                    <option value='pid'>project ID</option>
-                    <option value='pna'>project Name</option>
-                    <option value='pde'>Project Description</option>
-                    <option value='sda'>Start Date</option>
-                    <option value='eda'>End Date</option>
-                    <option value='ple'>Project Leader</option>
-                    <option value='pmn'>project leader number</option>
-                    <option value='pst'>Project Status</option>
-                    <option value='bud'>Budget</option>
-                    <option value='col'>Collaborators</option>
-                    <option value='fso'>Funding Source</option>
+                    <option value='project_id'>project ID</option>
+                    <option value='Project_Name'>project Name</option>
+                    <option value='Project_Description'>Project Description</option>
+                    <option value='Start_Date'>Start Date</option>
+                    <option value='End_Date'>End Date</option>
+                    <option value='Project_Leader'>Project Leader</option>
+                    <option value='project_leader_number'>project leader number</option>
+                    <option value='project_leader_mail'>Project Status</option>
+                    <option value='Budget'>Budget</option>
+                    <option value='Collaborators'>Collaborators</option>
+                    <option value='Funding_Source'>Funding Source</option>
                     </select>
                 <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="name">
                 <button class="w3-button w3-black w3-section" type="submit" name="submitid">
@@ -66,7 +66,7 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project update</h3>
             <p>Update Project information by id</p>
-            <form action="Search.php" target="display-frame" method="post">
+            <form action="update.php" target="display-frame" method="post">
                 <input class="w3-input w3-border w3-section" type="text" placeholder="Project ID" required name="nameid">
                 <select class="w3-input w3-border w3-section" name='task'>
                     <option value='pna'>project Name</option>
@@ -89,20 +89,11 @@
 
         <!-- choose task -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
-            <p><b>Extra information</b></p>
-            <form action="deptl.php" target="display-frame-2" method="post">
+            <p><b>Lecturer information</b></p>
+            <form action="Rela.php" target="display-frame-2" method="post">
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Project ID" required name="id">
                 <button class="w3-button w3-black" type="submit" name="submitid">
-                    <i class="fa fa-paper-plane"></i> Department information
-                </button>
-            </form>
-            <form action="courl.php" target="display-frame-2" method="post">
-                <button class="w3-button w3-black" type="submit" name="submitid">
-                    <i class="fa fa-paper-plane"></i> Course information
-                </button>
-            </form>
-            <form action="lectl.php" target="display-frame-2" method="post">
-                <button class="w3-button w3-black" type="submit" name="submitid">
-                    <i class="fa fa-paper-plane"></i> Lecturer information
+                    <i class="fa fa-paper-plane"></i> Check members
                 </button>
             </form>
         </div>

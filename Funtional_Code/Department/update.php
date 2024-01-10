@@ -16,9 +16,9 @@ if (!$db_selected) {
     echo "Failed to select DB. <br/>";
 }
 
-$sql = "UPDATE lecturer
+$sql = "UPDATE department
     SET $task = '$up'
-    WHERE lecturer_id = '$lid'
+    WHERE department_id = '$lid'
 ";
 $result = mysqli_query($con,$sql);
 

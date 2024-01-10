@@ -37,7 +37,7 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department information</h3>
             <p>Searching for Department information</p>
-            <form action="update.php" target="display-frame" method="post">
+            <form action="Search.php" target="display-frame" method="post">
             <select class="w3-input w3-border w3-section" name='task'>
                 <option value='department_id'>Department ID</option>
                 <option value='Department_Name'>Department Name</option>
@@ -67,6 +67,7 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department update</h3>
             <p>update Department information by id</p>
+            <form action="update.php" target="display-frame" method="post">
             <input class="w3-input w3-border w3-section" type="text" placeholder="Department id" required name="id">
             <select class="w3-input w3-border w3-section" name='task'>
                 <option value='Department_Name'>Department Name</option>
