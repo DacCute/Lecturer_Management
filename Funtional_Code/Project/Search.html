@@ -67,20 +67,20 @@
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project update</h3>
             <p>Update Project information by id</p>
             <form action="update.php" target="display-frame" method="post">
-                <input class="w3-input w3-border w3-section" type="text" placeholder="Project ID" required name="nameid">
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Project ID" required name="id">
                 <select class="w3-input w3-border w3-section" name='task'>
-                    <option value='pna'>project Name</option>
-                    <option value='pde'>Project Description</option>
-                    <option value='sda'>Start Date</option>
-                    <option value='eda'>End Date</option>
-                    <option value='ple'>Project Leader</option>
-                    <option value='pmn'>project member number</option>
-                    <option value='pst'>Project Status</option>
-                    <option value='bud'>Budget</option>
-                    <option value='col'>Collaborators</option>
-                    <option value='fso'>Funding Source</option>
+                    <option value='Project_Name'>project Name</option>
+                    <option value='Project_Description'>Project Description</option>
+                    <option value='Start_Date'>Start Date</option>
+                    <option value='End_Date'>End Date</option>
+                    <option value='Project_Leader'>Project Leader</option>
+                    <option value='project_leader_number'>project leader number</option>
+                    <option value='project_leader_mail'>Project Status</option>
+                    <option value='Budget'>Budget</option>
+                    <option value='Collaborators'>Collaborators</option>
+                    <option value='Funding_Source'>Funding Source</option>
                     </select>
-                <input class="w3-input w3-border w3-section" type="text" placeholder="Replace" required name="namerp">
+                <input class="w3-input w3-border w3-section" type="text" placeholder="Replace" required name="up">
                 <button class="w3-button w3-black w3-section" type="submit" onclick="alert('Infomation changed') name="submitid">
                     <i class="fa fa-paper-plane"></i> Update project
                 </button>
@@ -108,7 +108,7 @@
             <p><b>If cannot find or haven't has information</b></p>
             <a
                 href="Add.html">
-                <button class="w3-button w3-grey w3-section">Add Lecturer</button>
+                <button class="w3-button w3-grey w3-section">Add Project</button>
             </a>
         </div>
     </div>
