@@ -37,19 +37,18 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department information</h3>
             <p>Searching for Department information</p>
-            <form action="Search.php" target="display-frame" method="post">
             <select class="w3-input w3-border w3-section" name='task'>
-                <option value='department_id'>Department ID</option>
-                <option value='Department_Name'>Department Name</option>
-                <option value='Department_Head'>Department Head</option>
-                <option value='Location'>Location</option>
-                <option value='Phone_Number'>Phone Number</option>
-                <option value='Established_Date'>Established Date</option>
-                <option value='Number_of_Students'>Number of Students</option>
-                <option value='Department_Budget'>Departmental Budget</option>
-                <option value='Facilities'>Facilities</option>
-                <option value='Faculty_Members'>Faculty Members</option>
-                <option value='Department_Newsletter'>Department Newsletter</option>
+                <option value='did'>Department ID</option>
+                <option value='dna'>Department Name</option>
+                <option value='dhe'>Department Head</option>
+                <option value='loc'>Location</option>
+                <option value='pn'>Phone Number</option>
+                <option value='esd'>Established Date</option>
+                <option value='nos'>Number of Students</option>
+                <option value='dbu'>Departmental Budget</option>
+                <option value='fac'>Facilities</option>
+                <option value='fam'>Faculty Members</option>
+                <option value='dne'>Department Newsletter</option>
                 </select>
             <input class="w3-input w3-border w3-section" type="text" placeholder="Search" required name="name">
             <button class="w3-button w3-black w3-section" type="submit" name="submitid">
@@ -67,21 +66,20 @@
         <div class="w3-container w3-padding-30" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Department update</h3>
             <p>update Department information by id</p>
-            <form action="update.php" target="display-frame" method="post">
-            <input class="w3-input w3-border w3-section" type="text" placeholder="Department id" required name="id">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Department id" required name="nameid">
             <select class="w3-input w3-border w3-section" name='task'>
-                <option value='Department_Name'>Department Name</option>
-                <option value='Department_Head'>Department Head</option>
-                <option value='Location'>Location</option>
-                <option value='Phone_Number'>Phone Number</option>
-                <option value='Established_Date'>Established Date</option>
-                <option value='Number_of_Students'>Number of Students</option>
-                <option value='Department_Budget'>Departmental Budget</option>
-                <option value='Facilities'>Facilities</option>
-                <option value='Faculty_Members'>Faculty Members</option>
-                <option value='Department_Newsletter'>Department Newsletter</option>
+                <option value='dna'>Department Name</option>
+                <option value='dhe'>Department Head</option>
+                <option value='loc'>Location</option>
+                <option value='pn'>Phone Number</option>
+                <option value='esd'>Established Date</option>
+                <option value='nos'>Number of Students</option>
+                <option value='dbu'>Departmental Budget</option>
+                <option value='fac'>Facilities</option>
+                <option value='fam'>Faculty Members</option>
+                <option value='dne'>Department Newsletter</option>
                 </select>
-            <input class="w3-input w3-border w3-section" type="text" placeholder="Replace" required name="up">
+            <input class="w3-input w3-border w3-section" type="text" placeholder="Replace" required name="namerp">
             <button class="w3-button w3-black w3-section" type="submit" onclick="alert('Infomation changed') name="submitid">
                 <i class="fa fa-paper-plane"></i> Update Department
             </button>
@@ -91,14 +89,19 @@
         <!-- choose task -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
             <p><b>Extra information</b></p>
-            <form action="Rela.php" target="display-frame-2" method="post">
-                <input class="w3-input w3-border w3-section" type="text" placeholder="Course ID" required name="id">
-                <select class="w3-input w3-border w3-section" name='task'>
-                    <option value='lecturer'>Lecturer</option>
-                    <option value='course'>Course</option>
-                    </select>
-                <button class="w3-button w3-black" type="submit" name="submitid">
-                    <i class="fa fa-paper-plane"></i> Check relationship
+            <form action="lectl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Lecturer information
+                </button>
+            </form>
+            <form action="courl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Course information
+                </button>
+            </form>
+            <form action="projl.php" target="display-frame-2" method="post">
+                <button class="w3-button w3-black w3-section" type="submit" name="submitid">
+                    <i class="fa fa-paper-plane"></i> Project information
                 </button>
             </form>
         </div>
@@ -110,7 +113,7 @@
 
         <!-- Input data -->
         <div class="w3-container w3-padding-30 w3-section" id="contact">
-            <p><b>If cannot find or haven't has information</b></p>
+            <p><b>If the information is unavailable</b></p>
             <a
                 href="Add.html">
                 <button class="w3-button w3-grey w3-section">Add Department</button>
