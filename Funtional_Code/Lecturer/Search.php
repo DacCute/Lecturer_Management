@@ -16,7 +16,64 @@ if (!$db_selected) {
 }
 
 # use database
-$sql = "SELECT * FROM lecturer WHERE lecturer_id = '$lname'";
+if ($task == 'lid')
+    $sql = "SELECT * FROM lecturer WHERE lecturer_id LIKE '%$lname%'";
+
+if ($task == 'lfn')
+    $sql = "SELECT * FROM lecturer WHERE first_name LIKE '%$lname%'";
+
+if ($task == 'lln')
+    $sql = "SELECT * FROM lecturer WHERE last_name LIKE '%$lname%'";
+
+if ($task == 'dob')
+    $sql = "SELECT * FROM lecturer WHERE date_of_birth LIKE '%$lname%'";
+
+if ($task == 'did')
+    $sql = "SELECT * FROM lecturer WHERE department_id LIKE '%$lname%'";
+
+if ($task == 'ema')
+    $sql = "SELECT * FROM lecturer WHERE lecturer_email LIKE '%$lname%'";
+
+if ($task == 'pnu')
+    $sql = "SELECT * FROM lecturer WHERE phone_number LIKE '%$lname%'";
+
+if ($task == 'gen')
+    $sql = "SELECT * FROM lecturer WHERE gender LIKE '%$lname%'";
+
+if ($task == 'yoe')
+    $sql = "SELECT * FROM lecturer WHERE years_of_experience = $lname";
+
+if ($task == 'ara')
+    $sql = "SELECT * FROM lecturer WHERE Academic_Rank LIKE '%$lname%'";
+
+if ($task == 'tcr')
+    $sql = "SELECT * FROM lecturer WHERE total_credit = $lname";
+
+if ($task == 'gpa')
+    $sql = "SELECT * FROM lecturer WHERE gpa = $lname";
+
+if ($task == 'doj')
+    $sql = "SELECT * FROM lecturer WHERE Date_of_Joining LIKE '%$lname%'";
+
+if ($task == 'hnu')
+    $sql = "SELECT * FROM lecturer WHERE house_number = $lname";
+
+if ($task == 'str')
+    $sql = "SELECT * FROM lecturer WHERE street LIKE '%$lname%'";
+
+if ($task == 'cit')
+    $sql = "SELECT * FROM lecturer WHERE city LIKE '%$lname%'";
+
+if ($task == 'sta')
+    $sql = "SELECT * FROM lecturer WHERE state LIKE '%$lname%'";
+
+if ($task == 'cou')
+    $sql = "SELECT * FROM lecturer WHERE country LIKE '%$lname%'";
+
+if ($task == 'act')
+    $sql = "SELECT * FROM lecturer WHERE active LIKE '%$lname%'";
+
+
 $result = mysqli_query($con,$sql);
 
 # Make table
